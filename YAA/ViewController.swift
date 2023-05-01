@@ -10,6 +10,7 @@ import UIKit
 class ViewController: UIViewController {
     
     @IBOutlet weak var messageLabel: UILabel!
+    @IBOutlet weak var imageView: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,6 +19,8 @@ class ViewController: UIViewController {
 
     @IBAction func messageButton(_ sender: UIButton) {
         messageLabel.text = "You Are Awesome!"
+        messageLabel.textAlignment = .center
+        imageView.image = UIImage(named: "image0")
     }
     
 }
