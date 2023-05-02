@@ -22,7 +22,8 @@ class ViewController: UIViewController {
     
     @IBAction func messageButton(_ sender: UIButton) {
         
-        imageView.image = UIImage(named: "image" + String(imageNumber))
+//        imageView.image = UIImage(named: "image" + String(imageNumber))
+        imageView.image = UIImage(named: "image\(imageNumber)")
         imageNumber += 1
         if imageNumber == 10 {
             imageNumber = 0
